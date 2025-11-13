@@ -421,6 +421,7 @@ func GetOnObjectIdentifier(objectType sdk.ObjectType, objectName string) (sdk.Ob
 		sdk.ObjectTypeSchema:
 		return sdk.ParseDatabaseObjectIdentifier(objectName)
 	case sdk.ObjectTypeAggregationPolicy,
+		sdk.ObjectTypeAgent,
 		sdk.ObjectTypeAlert,
 		sdk.ObjectTypeAuthenticationPolicy,
 		sdk.ObjectTypeDataMetricFunction,

@@ -92,6 +92,7 @@ const (
 	ObjectTypeExperiment             ObjectType = "EXPERIMENT"
 	ObjectTypeStorageLifecyclePolicy ObjectType = "STORAGE LIFECYCLE POLICY"
 	ObjectTypeWorkspace              ObjectType = "WORKSPACE"
+	ObjectTypeAgent                  ObjectType = "AGENT"
 	// ObjectTypeProgrammaticAccessToken is a pseudo-object, as it does not support the usual operations in Snowflake, but it is handled by user functions.
 	// Programmatic access tokens do not have grants and cannot be tagged.
 	ObjectTypeProgrammaticAccessToken ObjectType = "PROGRAMMATIC ACCESS TOKEN" //nolint:gosec
@@ -191,6 +192,7 @@ var allObjectTypes = []ObjectType{
 	ObjectTypeStorageLifecyclePolicy,
 	ObjectTypeWorkspace,
 	ObjectTypeProgrammaticAccessToken,
+	ObjectTypeAgent,
 }
 
 // TODO(SNOW-1834370): use ToObjectType in other places with type conversion (instead of sdk.ObjectType)
